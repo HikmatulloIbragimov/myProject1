@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl css-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl css-->
+
+
+
+
+
+    <!-- jquery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- jquery-->
+</head>
+
+<body>
+    <section class="main">
+        <section class="head">
+            <div class="head_container flex1">
+                <div class="box flex">
+                    <div class="head_text">
+                        <label>email</label>
+                        <span>demo@example.com</span>
+                    </div>
+                    <div class="head_text">
+                        <label>Today`s Deal:</label>
+                        <span>Sale off 50%</span>
+                    </div>
+                </div>
+                <div class="box flex">
+                    <div class="header_text">
+                        <Select>
+                            <option>Language</option>
+                            <option>Ru</option>
+                            <option>Eng</option>
+                            <option>Uzb</option>
+                        </Select>
+                    </div>
+                    <div class="head_text">
+                        <Select>
+                            <option>Currency</option>
+                            <option>Usd</option>
+                            <option>Euro</option>
+                            <option>Us dollar</option>
+                        </Select>
+                    </div>
+                    <i id="icon" class="bi bi-moon b1 b b2"></i>
+                </div>
+            </div>
+        </section>
+        <header>
+            <div class="head_container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="./Assets/photo_2023-07-20_09-02-18.jpg" alt="">
+                    </div>
+                    <nav>
+                        <ul id="menuitem">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <span class="fas fa-bars" onclick="menuToggle()"></span>
+                    <div class="account">
+                        <i class="bi bi-search"></i>
+                        <i class="bi bi-person"></i>
+                        <i class="bi bi-cart"></i>
+                        <i id="icon2" class="bi bi-moon b1 b"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <script>
+            let menuitem = document.getElementById('menuitem');
+            menuitem.style.maxHeight = '0px';
+            function menuToggle() {
+                if (menuitem.style.maxHeight == '0px') {
+                    menuitem.style.maxHeight = '600px'
+                } else {
+                    menuitem.style.maxHeight = '0px'
+                }
+            }
+
+
+            window.addEventListener('scroll', function () {
+                let header = document.querySelector('header');
+                header.classList.toggle('sticky , window.scroll > 50')
+            })
+        </script>
+
+        <section class="home">
+            <div class="head_container">
+                <div class="owl-carousel owl-theme">
+                    <div class="slide">
+                        <div class="slide-content flex">
+                            <div class="left top">
+                                <h3>Electronic</h3>
+                                <h1>New <span class="multiple-text"></span></h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vero et, quam animi
+                                    explicabo aut consequatur excepturi illum iure ratione. Lorem ipsum dolor sit amet
+                                    consectetur, adipisicing elit. Veritatis obcaecati deserunt nisi ad doloribus
+                                    accusantium, necessitatibus sequi quas minus esse?</p>
+                                <button class="btn1">SHOP NOW</button>
+                            </div>
+                            <div class="right">
+                                <img src="./Assets/slide1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content flex">
+                            <div class="right">
+                                <img src="./Assets/slide3.jpg" alt="">
+                            </div>
+                            <div class="left top">
+                                <h3>Electronic</h3>
+                                <h1>New <span class="multiple-text2">Electronics</span></h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vero et, quam animi
+                                    explicabo aut consequatur excepturi illum iure ratione. Lorem, ipsum dolor sit amet
+                                    consectetur adipisicing elit. Iure repellat, consequuntur hic ex delectus qui soluta
+                                    rerum a fuga molestiae!</p>
+                                <button class="btn1">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content flex">
+                            <div class="left top">
+                                <h3>Electronic</h3>
+                                <h1>New <span class="multiple-text3">Mobile Adabter</span></h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vero et, quam animi
+                                    explicabo aut consequatur excepturi illum iure ratione. Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Suscipit temporibus commodi quae quos ducimus nesciunt
+                                    magnam ipsam, earum ullam dolorum?
+                                </p>
+                                <button class="btn1">SHOP NOW</button>
+                            </div>
+                            <div class="right">
+                                <img src="./Assets/slide2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- owl js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl js-->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            items: 1,
+            dots: true,
+            autoplay: false,
+        })
+    </script>
+
+    <section class="offer">
+        <div class="container center">
+            <div class="content flex">
+                <div class="box flex">
+                    <div class="text">
+                        <p>The Latest arrival</p>
+                        <h3>One Step <span>Pairing</span></h3>
+                        <button class="btn2">SHOP NOW</button>
+                        <div class="bottom_text">
+                            <p><span>STEAL</span> OFF</p>
+                            <p>THE <span>STEAL</span></p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="./Assets/o1.png" alt="">
+                    </div>
+                </div>
+                <div class="box box2 flex">
+                    <div class="img">
+                        <img src="./Assets/o2.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="text_top">
+                            <p>SALE UP TO <label>70%</label></p>
+                        </div>
+                        <div class="bottom_text">
+                            <p>The Latest arrival</p>
+                            <p>One step <span>Pairing</span></p>
+                            <button class="btn2">SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about">
+        <div class="container flex top">
+            <div class="left">
+                <img src="./Assets/a.png" alt="">
+            </div>
+            <div class="right">
+                <div class="heading">
+                    <h3>THE PRODUCT</h3>
+                    <h2>Benefits of Fabulous</h2>
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus architecto hic odit
+                        natus enim praesentium quasi quia debitis amet a.</p>
+                    <ul class="list grid">
+                        <li>Higher productivity</li>
+                        <li>Stress release sound quality</li>
+                        <li>Sound quality</li>
+                        <li>Concentration</li>
+                        <li>High quality sound</li>
+                        <li>Portability</li>
+                        <li>Voice concelling</li>
+                    </ul>
+                    <button>VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="time">
+        <div class="container flextop ">
+            <div class="left ">
+                <h2>Best` Deal of the Day</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque consectetur esse ab eos soluta
+                    maiores sequi quas ut rem id Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure,
+                    dolores nulla adipisci et facere excepturi. Quis dolore perferendis, ad error natus, officiis maxime
+                    deleniti nemo, ducimus fugiat modi sunt!</p>
+                <h1><span id="day">00</span> : <span id="hour">00</span> : <span id="minute">00</span> : <span id="second">00</span></h1>
+            </div>
+            <div class="right">
+                <img src="./Assets/slide1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="product mtop">
+        <div class="container">
+            <div class="heading heading2">
+                <h3>THE LASTEST</h3>
+                <h2>Fabulous Products</h2>
+            </div>
+            <div class="content mtop grid">
+                <div class="box">
+                    <div class="img">
+                        <img src="./Assets/p1.jpg" alt="">
+                        <img src="./Assets/p2.jpg" class="upper-image">
+                    </div>
+                    <div class="rate">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Apple Cinema 30</h3>
+                        <p><span>$122.000</span> $110.00</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="./Assets/p3.jpg" alt="">
+                        <img src="./Assets/p4.jpg" class="upper-image">
+                    </div>
+                    <div class="rate">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Apple Cinema 30</h3>
+                        <p><span>$122.000</span> $110.00</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="./Assets/p5.jpg" alt="">
+                        <img src="./Assets/p6.jpg" class="upper-image">
+                    </div>
+                    <div class="rate">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Apple Cinema 30</h3>
+                        <p><span>$122.000</span> $110.00</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="./Assets/p7.jpg" alt="">
+                        <img src="./Assets/p8.jpg" class="upper-image">
+                    </div>
+                    <div class="rate">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Apple Cinema 30</h3>
+                        <p><span>$122.000</span> $110.00</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="./Assets/slide3.jpg" alt="">
+                        <img src="./Assets/slide4.jpg" class="upper-image">
+                    </div>
+                    <div class="rate">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Apple Cinema 30</h3>
+                        <p><span>$122.000</span> $110.00</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="./Assets/p1.jpg" alt="">
+                        <img src="./Assets/p2.jpg" class="upper-image">
+                    </div>
+                    <div class="rate">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Apple Cinema 30</h3>
+                        <p><span>$122.000</span> $110.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services mtop">
+        <div class="container">
+            <div class="heading heading2">
+                <h3>THE LASTEST </h3>
+                <h2>Our Services</h2>
+            </div>
+            <div class="content grid mtop center">
+                <div class="box">
+                    <div class="img">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Running</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum maxime eos sapiente
+                            voluptatibus nesciunt soluta ducimus sed, qui pariatur blanditiis. Lorem ipsum dolor sit
+                            .</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <i class="bi bi-mic"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Running</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum maxime eos sapiente
+                            voluptatibus nesciunt soluta ducimus sed, qui pariatur blanditiis. Lorem ipsum dolor sit
+                            .</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <i class="bi bi-thermometer-low"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Running</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum maxime eos sapiente
+                            voluptatibus nesciunt soluta ducimus sed, qui pariatur blanditiis. Lorem ipsum dolor sit
+                            .</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <i class="bi bi-thermometer-low"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Running</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum maxime eos sapiente
+                            voluptatibus nesciunt soluta ducimus sed, qui pariatur blanditiis. Lorem ipsum dolor sit
+                            .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="customer mtop">
+        <div class="container">
+            <div class="heading heading2">
+                <h3>THE PRODUCT</h3>
+                <h2>Customer Review</h2>
+            </div>
+            <div class="owl-carousel owl-carousel2 owl-theme mtop">
+                <div class="item">
+                    <div class="box flex">
+                        <div class="image">
+                            <div class="img">
+                                <img src="./Assets/t1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, modi laudantium! Officia
+                                omnis molestiae similique odio sed nobis, incidunt ab voluptate quae animi ratione
+                                exercitationem hic perspiciatis illum iste provident!
+                            </p>
+                        </div>
+                    </div>
+                    <h1>Luise Charls <span>Web Designer</span></h1>
+                </div>
+                <div class="item">
+                    <div class="box flex">
+                        <div class="image">
+                            <div class="img">
+                                <img src="./Assets/t2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, modi laudantium! Officia
+                                omnis molestiae similique odio sed nobis, incidunt ab voluptate quae animi ratione
+                                exercitationem hic perspiciatis illum iste provident!
+                            </p>
+                        </div>
+                    </div>
+                    <h1>Luise Charls <span>Web Designer</span></h1>
+                </div>
+                <div class="item">
+                    <div class="box flex">
+                        <div class="image">
+                            <div class="img">
+                                <img src="./Assets/t1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, modi laudantium! Officia
+                                omnis molestiae similique odio sed nobis, incidunt ab voluptate quae animi ratione
+                                exercitationem hic perspiciatis illum iste provident!
+                            </p>
+                        </div>
+                    </div>
+                    <h1>Luise Charls <span>Web Designer</span></h1>
+                </div>
+                <div class="item">
+                    <div class="box flex">
+                        <div class="image">
+                            <div class="img">
+                                <img src="./Assets/t2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, modi laudantium! Officia
+                                omnis molestiae similique odio sed nobis, incidunt ab voluptate quae animi ratione
+                                exercitationem hic perspiciatis illum iste provident!
+                            </p>
+                        </div>
+                    </div>
+                    <h1>Luise Charls <span>Web Designer</span></h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                1000: {
+                    items: 2
+                }
+            }
+        })
+    </script>
+
+
+
+    <section class="brand">
+        <div class="container">
+            <div class="owl-carousel owl-carousel2 owl-theme mtop">
+                <div class="item">
+                    <div class="img">
+                        <img src="./Assets/b1.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./Assets/b2.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./Assets/b3.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./Assets/b4.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./Assets/b1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                768: {
+                    items: 4,
+                    dots: true
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+
+
+    <footer>
+        <div class="container mtop grid">
+            <div class="box">
+                <div class="logo">
+                    <img src="./Assets/photo_2023-07-20_09-02-18.jpg" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Explicabo officiis impedit nulla
+                    sapiente <br>
+                    Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Molestiae, error.
+                </p>
+                <div class="social_media flex">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-tiktok"></i>
+                    <i class="bi bi-linkedin"></i>
+                </div>
+            </div>
+            <div class="box center">
+                <div class="news_icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="news">
+                    <h2>Join Our Newsletter</h2>
+                    <p>Enter your email address and recieved news.</p>
+                    <div class="send flex1">
+                        <input type="text" placeholder="Enter Your Email">
+                        <span class="fas fa-paper-plane"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="input flex">
+                    <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Contact Us </h3>
+                        <label>+123 456 789</label>
+                    </div>
+                </div>
+                <div class="input flex">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email </h3>
+                        <label>info@example.com</label>
+                    </div>
+                </div>
+                <div class="input flex">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Address </h3>
+                        <label>151 Demo address Uzbekistan Tashkent</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="legal">
+        <div class="container flex1">
+            <label for="">Powered by Ibs school Angren 2023</label>
+            <div class="payment">
+                <i class="bi bi-credit-card"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        let icon = document.getElementById('icon')
+        let icon2 = document.getElementById('icon2')
+
+        icon.onclick = function () {
+            document.body.classList.toggle('dark-mode')
+            if (document.body.classList.contains('dark-mode')) {
+                icon.className = 'bi bi-brightness-high-fill b'
+            } else {
+                icon.className = 'bi bi-moon b1 b'
+            }
+        }
+        icon2.onclick = function () {
+            document.body.classList.toggle('dark-mode')
+            if (document.body.classList.contains('dark-mode')) {
+                icon2.className = 'bi bi-brightness-high-fill b'
+            } else {
+                icon2.className = 'bi bi-moon b1 b'
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
