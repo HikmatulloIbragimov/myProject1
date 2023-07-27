@@ -25,6 +25,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.navbarMain {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  background-color: var(--primary);
+}
+
 .head_container {
   max-width: 80%;
   margin: auto;
@@ -196,7 +203,7 @@ header .sticky ul li a {
     display: none;
   }
   .navbar .account .b {
-    display: block;
+    display: none;
     margin-top: 100px;
   }
   header {
@@ -205,15 +212,19 @@ header .sticky ul li a {
   header .logo {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 10px;
   }
   header .navbar span {
     position: absolute;
     left: 30px;
-    top: 20px;
+    top: 10px;
+    color: var(--secondary);
   }
   header .sticky {
     position: relative;
+  }
+  .navbarMain {
+    top: 0;
   }
 }
 img {

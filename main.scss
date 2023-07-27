@@ -28,11 +28,16 @@ body {
     background-color: var(--primary);
     font-family: 'Poppins', sans-serif;
 }
-
+.navbarMain{
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: var(--primary);
+}
 .head_container {
     max-width: 80%;
     margin: auto;
-
+    
     .box {
         .head_text {
             color: var(--secondary);
@@ -102,11 +107,8 @@ header {
     color: black;
     height: 10vh;
     line-height: 10vh;
-    // position: fixed;
-    // top: 42px;
-    // z-index: 5;
-    // background-color: white;
-    // box-shadow: 1px 1px 1px 2px lightgray;
+    
+ 
 
     .logo {
         height: 50px;
@@ -163,6 +165,7 @@ header {
             // }
             .b {
                 font-size: 30px;
+
             }
         }
 
@@ -278,7 +281,7 @@ header {
                 display: none;
             }
             .b{
-                display: block;
+                display: none;
                 margin-top: 100px;
             }
         }
@@ -291,14 +294,15 @@ header {
         .logo {
             position: absolute;
             right: 0;
-            top: 0;
+            top: 10px;
         }
 
         .navbar {
             span {
                 position: absolute;
                 left: 30px;
-                top: 20px;
+                top: 10px;
+                color: var(--secondary);
             }
         }
 
@@ -306,6 +310,9 @@ header {
             position: relative;
 
         }
+    }
+    .navbarMain{
+        top: 0;
     }
 
 }
