@@ -81,6 +81,7 @@ a {
     .head_container{
         .box{
             .b2{
+                font-size: 30px;
                 display: none;
             }
         }
@@ -97,9 +98,15 @@ select {
 }
 
 header {
+    width: 100%;
     color: black;
     height: 10vh;
     line-height: 10vh;
+    // position: fixed;
+    // top: 42px;
+    // z-index: 5;
+    // background-color: white;
+    // box-shadow: 1px 1px 1px 2px lightgray;
 
     .logo {
         height: 50px;
@@ -155,8 +162,7 @@ header {
             //     margin-left: 100px;
             // }
             .b {
-                font-size: 20px;
-
+                font-size: 30px;
             }
         }
 
@@ -213,10 +219,14 @@ header {
 @media only screen and (max-width:768px) {
 
     .head{
+        height: 20vh;
+        display: flex;
+        flex-wrap: wrap;
         .head_container{
             .box{
                 .b2{
                     display: block;
+                    font-size: 30px;
                     margin-left: 20px;
                 }
             }
@@ -224,6 +234,7 @@ header {
     }
     .head_container {
         max-width: 90%;
+        flex-wrap: wrap;
         .navbar {
             span {
                 color: black;
@@ -1019,7 +1030,7 @@ footer {
         }
 
         .content {
-            margin-top: 30px;
+            margin-top: 100px;
         }
 
         h3 {
@@ -1037,6 +1048,11 @@ footer {
         .container {
             flex-direction: column;
             flex-direction: column-reverse;
+            .right{
+                .heading{
+                    text-align: center;
+                }
+            }
         }
     }
 
@@ -1087,7 +1103,7 @@ footer {
 
     .customer{
         .container{
-            margin-top: 350px;
+            margin-top: 500px;
 
         }
     }
